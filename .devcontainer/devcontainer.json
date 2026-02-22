@@ -1,13 +1,10 @@
 {
-  "name": "Shopify App Dev Environment",
-  "image": "mcr.microsoft.com/vscode/devcontainers/javascript-node:16",
-  "settings": {
-    "terminal.integrated.shell.linux": "/bin/bash"
+  "image": "mcr.microsoft.com/devcontainers/typescript-node",
+
+  "customizations": {
+    "vscode": {
+      "extensions": ["streetsidesoftware.code-spell-checker"]
+    }
   },
-  "extensions": [
-    "dbaeumer.vscode-eslint",
-    "esbenp.prettier-vscode",
-    "ms-vscode.vscode-typescript-next"
-  ],
-  "postCreateCommand": "npm install"
+  "forwardPorts": [3000]
 }
